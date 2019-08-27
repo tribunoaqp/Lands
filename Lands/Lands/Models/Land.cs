@@ -6,7 +6,7 @@ namespace Lands.Models
 {
     using Newtonsoft.Json;
     using System.Collections.Generic;
-    class Land
+    public class Land
     {
         [JsonProperty(PropertyName = "name")]
         public string Name { get; set; }
@@ -33,9 +33,9 @@ namespace Lands.Models
         [JsonProperty(PropertyName = "demonym")]
         public string Demonym { get; set; }
         [JsonProperty(PropertyName = "area")]
-        public double Area { get; set; }
+        public double? Area { get; set; }
         [JsonProperty(PropertyName = "gini")]
-        public double Gini { get; set; }
+        public double? Gini { get; set; }
         [JsonProperty(PropertyName = "timezones")]
         public List<string> Timezones { get; set; }
         [JsonProperty(PropertyName = "borders")]
