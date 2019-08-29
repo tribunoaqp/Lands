@@ -22,7 +22,7 @@
         [JsonProperty(PropertyName = "hr")]
         public string Croacian { get; set; }
         [JsonProperty(PropertyName = "fa")]
-        public string Danish { get; set; }
+        public string Persian { get; set; }
 
     }
 }
